@@ -44,7 +44,6 @@ public class TesteFramesEJanelas {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();		
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
-		
 		driver.findElement(By.id("buttonPopUpHard")).click();
 		System.out.println(driver.getWindowHandle());
 		System.out.println(driver.getWindowHandles());
